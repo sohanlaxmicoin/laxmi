@@ -1,0 +1,17 @@
+[Unit]
+Description=Laxmicoin Full Node
+After=network.target
+
+[Service]
+User=laxmicoin
+Group=laxmicoin
+WorkingDirectory=~
+
+Type=forking
+PIDFile=/var/run/laxmicoind.pid
+
+ExecStart=/usr/bin/laxmicoind --config-file /etc/laxmicoind.conf \
+    --detach --pidfile /var/run/laxmicoind.pid
+
+[Install]
+WantedBy=multi-user.target
