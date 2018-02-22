@@ -150,7 +150,7 @@ namespace config
   boost::uuids::uuid const NETWORK_ID = { {
       0x07, 0xF4, 0x65, 0xE8, 0x87, 0xC9, 0xE7, 0xA9, 0xEB, 0x6D, 0xD3, 0x8C, 0x45, 0x6E, 0xC4, 0x21
     } };
-  std::string const GENESIS_TX = "";
+  std::string const GENESIS_TX = "011201ff00011e026bc5c7db8a664f652d78adb587ac4d759c6757258b64ef9cba3c0354e64fb2e42101abca6a39c561d0897be183eb0143990eba201aa7d2c652ab0555d28bb4b70728";
   uint32_t const GENESIS_NONCE = 10000;
 
   namespace testnet
@@ -162,7 +162,7 @@ namespace config
     boost::uuids::uuid const NETWORK_ID = { {
         0x07, 0xF4, 0x65, 0xE8, 0x87, 0xC9, 0xE7, 0xA9, 0xEB, 0x6D, 0xD3, 0x8C, 0x45, 0x6E, 0xC4, 0x22
       } };
-    std::string const GENESIS_TX = "";
+    std::string const GENESIS_TX = "011201ff00011e02ec8750a795fcd2a9d776aaac3a89336feea414718c76c0d6680fe625241d4f522101912cba0ab676306a8c958e97ceeddf2d3d1db24b49cf6a3ee96eb6745e0fb1fb";
     uint32_t const GENESIS_NONCE = 10001;
   }
 }
